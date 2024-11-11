@@ -1,7 +1,10 @@
 <template>
   <div>
+    <NuxtLayout />
     <NuxtPage />
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import "~/assets/styles.css";
+</script>
