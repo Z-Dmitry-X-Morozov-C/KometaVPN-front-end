@@ -13,8 +13,8 @@
   top: 0;
   z-index: -10;
   display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(100px, 1fr));
-  grid-template-rows: repeat(7, 100px);
+  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+  grid-template-rows: repeat(7, 128px);
   height: 695px;
   overflow: hidden;
 }
@@ -35,4 +35,5 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
+
 </style>
