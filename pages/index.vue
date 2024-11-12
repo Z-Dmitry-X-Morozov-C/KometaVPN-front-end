@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <main>
     <MainComponent />
-  </div>
+    <!-- <AboutComponent/> -->
+  </main>
 </template>
 
 <script setup></script>

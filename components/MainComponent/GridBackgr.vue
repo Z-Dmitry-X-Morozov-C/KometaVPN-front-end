@@ -1,6 +1,6 @@
 <template>
   <div class="grid-section">
-    <div v-for="item in 133" class="grid-section_conteiner"></div>
+    <div v-for="item in 200" class="grid-section_conteiner"></div>
   </div>
 </template>
 
@@ -8,20 +8,21 @@
 
 <style scoped>
 .grid-section {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  z-index: -10;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
-  grid-template-rows: repeat(7, 128px);
-  height: 695px;
+  grid-template-columns: repeat(20, 128px);
+  grid-template-rows: repeat(4, 128px);
+  position: absolute;
+  width: 100.1%;
+  height: 495px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   overflow: hidden;
 }
 
 .grid-section_conteiner {
   position: relative;
-  border: 1px solid rgba(116, 116, 116, 0.05);
+  border: 1px solid  rgba(116, 116, 116, 0.05);
 }
 
 .grid-section_conteiner::before {
@@ -35,5 +36,4 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-
 </style>

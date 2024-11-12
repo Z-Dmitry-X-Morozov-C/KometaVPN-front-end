@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <header class="header">
     <div class="header-content">
       <div>
         <img class="header-content_logo" src="/assets/img/LOGO.svg" alt="KametaLOGO" />
@@ -9,7 +9,7 @@
       <div class="cursor header-content-nav_proj-point">Цель проекта</div>
       <div class="cursor header-content-nav_contact-us">Связаться с нами</div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script setup></script>
@@ -19,7 +19,7 @@
   position: sticky;
   top: 10px;
   margin: 40px auto;
-  width: 85%;
+  width: 90%;
   height: 64px;
   border-radius: 118px;
   backdrop-filter: blur(60px);
@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .header-content_logo {
