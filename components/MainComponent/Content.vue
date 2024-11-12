@@ -29,7 +29,7 @@
 }
 .main-wrapper {
   position: absolute;
-  left: 8dvw;
+  margin-left: 9%;
   z-index: 1;
 }
 
@@ -95,8 +95,11 @@
 
   .main-wrapper_stars {
     scale: 3;
+    width: 50%;
+    display: block;
     position: static;
-    margin: 40% 0 0 25%;
+    margin: 45% 0 0 10%;
+    overflow: hidden;
   }
 
   .main-wrapper_btn-text {
