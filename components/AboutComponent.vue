@@ -1,13 +1,20 @@
 <template>
-  <div></div>
+  <div class="info">
+    <AboutComponentWeBelieve/>
+  </div>
 </template>
 
-<script></script>
+<script>
+
+
+
+</script>
 
 <style scoped>
-div {
-  height: 1000px;
-  width: 10px;
-  background-color: aquamarine;
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 400px;
 }
 </style>

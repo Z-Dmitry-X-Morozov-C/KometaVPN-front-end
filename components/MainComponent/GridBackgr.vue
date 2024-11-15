@@ -1,18 +1,25 @@
 <template>
-  <div class="grid-section">
-    <div v-for="item in 200" class="grid-section_conteiner"></div>
+  <div class="flex">
+    <div class="grid-section">
+      <div v-for="item in 200" class="grid-section_conteiner"></div>
+    </div>
+
   </div>
 </template>
 
 <script></script>
 
 <style scoped>
+.flex {
+  display: flex;
+}
+
 .grid-section {
   display: grid;
   grid-template-columns: repeat(20, 128px);
   grid-template-rows: repeat(4, 128px);
   position: absolute;
-  width: 100.1%;
+  width: 110%;
   height: 495px;
   top: 0;
   left: 50%;

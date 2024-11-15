@@ -47,11 +47,11 @@ import TitleStars from "./TitleStars.vue";
   right: 30%;
   transform: translateX(-50%);
   top: 25px;
-  z-index: -1;
+  z-index: -101;
 }
 
 .main-wrapper_btn {
-  position: static;
+  position: relative;
   display: flex;
   margin-top: 1em;
   color: black;
@@ -85,14 +85,12 @@ import TitleStars from "./TitleStars.vue";
   }
 
   .main-wrapper_comet {
-    position: absolute;
     scale: 1.3;
-    top: 45%;
-    left: 20%;
+    top: 60%;
+    right: 60%;
   }
 
   .main-wrapper_btn {
-    position: relative;
     padding: 16px;
   }
 
@@ -103,7 +101,8 @@ import TitleStars from "./TitleStars.vue";
 
 @media (max-width: 422px) {
   .main-wrapper_comet {
-    right: 10%;
+    right: 70%;
+
   }
 }
 
