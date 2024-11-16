@@ -1,18 +1,15 @@
 <template>
-  <div class="info">
-    <AboutComponentWeBelieve/>
+  <div class="info title">
+    <AboutComponentProjectPoint/>
+    <AboutComponentWeBelieve />
   </div>
 </template>
 
-<script>
-
-
-
+<script setup>
 </script>
 
 <style scoped>
 .info {
-  display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 400px;

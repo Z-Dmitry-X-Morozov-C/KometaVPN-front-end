@@ -7,8 +7,6 @@ import Comet from "../Comet.vue";
     <Comet class="title-conteiner-comet_comet-1"/>
     <Comet class="title-conteiner-comet_comet-2"/>
     <Comet class="title-conteiner-comet_comet-3"/>
-
-    
   </div>
 </template>
 

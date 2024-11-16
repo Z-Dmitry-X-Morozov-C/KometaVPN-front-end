@@ -7,9 +7,39 @@
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   height: 100vh;
   width: 100vw;
   background: #050505;
-  overflow-x: hidden;
+}
+
+.title {
+  font-size: calc(50px + (40 + 40 * 0.7) * ((100vw - 320px) / 1920));
+  font-weight: 900;
+  line-height: 85%;
+  letter-spacing: -6%;
+  text-align: center;
+  font-style: italic;
+}
+
+.text {
+  font-size: calc(18px + (6 + 6 * 0.7) * ((100vw - 320px) / 1920));
+  font-weight: 400;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -3%;
+  font-style: normal;
+}
+
+.justify-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
 }

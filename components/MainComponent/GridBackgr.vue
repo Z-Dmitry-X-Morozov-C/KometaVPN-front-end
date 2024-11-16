@@ -10,14 +10,10 @@
 <script></script>
 
 <style scoped>
-.flex {
-  display: flex;
-}
-
 .grid-section {
   display: grid;
   grid-template-columns: repeat(20, 128px);
-  grid-template-rows: repeat(4, 128px);
+  grid-template-rows: repeat(5, 128px);
   position: absolute;
   width: 110%;
   height: 495px;
@@ -30,6 +26,7 @@
 .grid-section_conteiner {
   position: relative;
   border: 1px solid  rgba(116, 116, 116, 0.05);
+  
 }
 
 .grid-section_conteiner::before {

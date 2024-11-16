@@ -1,6 +1,6 @@
 <template>
   <div class="main-wrapper">
-    <p class="main-wrapper_title">
+    <p class="main-wrapper_title title">
       Быстрый <br />
       Приватный <br />
       Свободный
@@ -35,7 +35,6 @@ import TitleStars from "./TitleStars.vue";
 
 .main-wrapper_title {
   display: inline-block;
-  font-style: italic;
   font-size: calc(34px + 99 * (100vw / 1920));
   font-weight: 900;
   line-height: 85%;
@@ -53,7 +52,7 @@ import TitleStars from "./TitleStars.vue";
 .main-wrapper_btn {
   position: relative;
   display: flex;
-  margin-top: 1em;
+  margin-top: 4.6vw;
   color: black;
   flex-direction: row;
   justify-content: center;
@@ -102,7 +101,9 @@ import TitleStars from "./TitleStars.vue";
 @media (max-width: 422px) {
   .main-wrapper_comet {
     right: 70%;
-
+  }
+  .main-wrapper_btn {
+    margin-top: 48px;
   }
 }
 
