@@ -10,11 +10,6 @@ import "~/assets/styles.css";
 
 useHead({
   title: "KometaVPN",
-  meta: [{ name: "description", content: "My amazing site." }],
-  meta: [{property: "og:image", content: "~/assets/img/WebPreview.jpg"}],
-  bodyAttrs: {
-    class: "test",
-  },
-  script: [{ innerHTML: "console.log('Hello world')" }],
+  ogImage: '~/assets/img/WebPreview.jpg',
 });
 </script>
