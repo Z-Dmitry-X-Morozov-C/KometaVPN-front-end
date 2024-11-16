@@ -39,6 +39,7 @@ import TitleStars from "./TitleStars.vue";
   font-weight: 900;
   line-height: 85%;
   cursor: default;
+  text-align: start;
 }
 
 .main-wrapper_comet {
