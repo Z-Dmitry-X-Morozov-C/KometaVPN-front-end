@@ -5,7 +5,7 @@
       Приватный <br />
       Свободный
     </p>
-    <button class="main-wrapper_btn main-wrapper_btn-text">Попробовать сейчас</button>
+    <ButtonComponent :text="ButtonText" />
     <div class="main-wrapper_comet">
       <TitleStars />
     </div>
@@ -14,6 +14,9 @@
 
 <script setup>
 import TitleStars from "./TitleStars.vue";
+import ButtonComponent from "../UI/ButtonComponent.vue";
+
+const ButtonText = "Попробовать сейчас";
 </script>
 
 <style scoped>
@@ -107,5 +110,4 @@ import TitleStars from "./TitleStars.vue";
     margin-top: 48px;
   }
 }
-
 </style>

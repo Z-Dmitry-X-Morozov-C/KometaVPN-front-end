@@ -1,12 +1,15 @@
 <template>
-  <div class="info title">
-    <AboutComponentProjectPoint/>
+  <div class="info">
+    <AboutComponentProjectPoint />
     <AboutComponentWeBelieve />
+    <AboutComponentVLESS />
+    <AboutComponentTerm />
+    <AboutComponentWorldMap />
+    <AboutComponentTryNow />
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
 .info {
