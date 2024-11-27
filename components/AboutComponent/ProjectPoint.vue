@@ -1,33 +1,30 @@
 <template>
-  <Transition name="fade">
-    <div :v-if="isVisible" class="fade-in" ref="el">
-      <div class="info_project_point justify-center">
-        <div class="info_project_point_title">
-          <p class="title">Цель проекта</p>
-        </div>
-        <div class="info_project_point_desc">
-          <p class="text">
-            Наш VPN сервис обеспечивает свободу доступа к информации, поддерживая принципы открытого интернета, о
-            которых говорил Джон Перри Барлоу
-          </p>
-        </div>
+  <section :ref="isVisible">
+    <div class="info_project_point justify-center">
+      <div class="info_project_point_title">
+        <p class="title" id="Point">Цель проекта</p>
       </div>
-      <div class="info_project_point_quote">
-        <Comet class="info_project_point_quote-1" />
-        <div class="info_project_point_quote-2">
-          <p>
-            «Моя родина — Киберпространство,<br />
-            новый дом сознания».
-          </p>
-        </div>
-        <Comet class="info_project_point_quote-3" />
+      <div class="info_project_point_desc">
+        <p class="text">
+          Наш VPN сервис обеспечивает свободу доступа к информации, поддерживая принципы открытого интернета, о которых
+          говорил Джон Перри Барлоу
+        </p>
       </div>
     </div>
-  </Transition>
+    <div class="info_project_point_quote">
+      <Comet class="info_project_point_quote-1" />
+      <div class="info_project_point_quote-2">
+        <p>
+          «Моя родина — Киберпространство,<br />
+          новый дом сознания».
+        </p>
+      </div>
+      <Comet class="info_project_point_quote-3" />
+    </div>
+  </section>
 </template>
 
 <script setup>
-import "~/assets/styles.css";
 import { ref } from "vue";
 import { useIntersectionObserver } from "@vueuse/core";
 
@@ -47,28 +44,28 @@ const { stop } = useIntersectionObserver(el, ([{ isIntersecting }]) => {
 .info_project_point_desc {
   margin-top: 5vw;
   max-width: 628px;
-  min-width: 335px;
   text-align: center;
 }
 
 .info_project_point_quote {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 50px);
   grid-auto-flow: column;
-  height: 400px;
+  width: 100%;
+  padding: 12px;
   gap: 51px;
+  grid-auto-flow: column;
   justify-content: center;
   font-size: calc(18px + (6 + 6 * 0.7) * ((100vw - 320px) / 1920));
   margin-top: 41px;
   font-weight: bolder;
-  min-width: 335px;
   text-align: center;
-  line-height: 130%;
 }
 
 .info_project_point_quote-1 {
   grid-area: 1 / 1 / 6 / 1;
+  justify-self: end;
 }
 
 .info_project_point_quote-2 {
@@ -84,7 +81,7 @@ const { stop } = useIntersectionObserver(el, ([{ isIntersecting }]) => {
 }
 
 /* анимация в облости видимости на экране */
-.fade-enter-active,
+/* .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease-out;
 }
@@ -95,7 +92,7 @@ const { stop } = useIntersectionObserver(el, ([{ isIntersecting }]) => {
 
 .fade-in {
   opacity: 1;
-}
+} */
 
 @media (max-width: 847px) {
   .info_project_point {
@@ -114,18 +111,28 @@ const { stop } = useIntersectionObserver(el, ([{ isIntersecting }]) => {
   }
 
   .info_project_point_quote {
+    grid-template-columns: 1fr;
     gap: 10px;
   }
 
   .info_project_point_quote-1 {
-    grid-area: 2 / 2 / 5 / 2;
-    margin-left: 20px;
+    position: relative;
+    grid-row: 2 / 6;
+    grid-column: 1/1;
+    justify-self: start;
+    left: 20%;
+  }
+  .info_project_point_quote-2 {
+    grid-row: 1/1;
+    grid-column: 1/1;
   }
 
   .info_project_point_quote-3 {
-    grid-area: 2 / 2 / 5 / 2;
+    position: relative;
+    grid-row: 2 / 6;
+    grid-column: 1/1;
+    right: 20%;
     justify-self: end;
-    margin-right: 20px;
   }
 }
 </style>

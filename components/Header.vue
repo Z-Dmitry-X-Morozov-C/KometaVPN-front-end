@@ -6,13 +6,20 @@
       </div>
     </div>
     <div class="header-content-nav">
-      <div class="cursor header-content-nav_proj-point">Цель проекта</div>
+      <div @click.prevent="smoothScroll('#Point')" class="cursor header-content-nav_proj-point">Цель проекта</div>
       <div class="cursor header-content-nav_contact-us">Связаться с нами</div>
     </div>
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+import { useWindowScroll } from "@vueuse/core";
+
+const smoothScroll = (target) => {
+  const { x, y } = useWindowScroll({ behavior: "smooth" });
+  y.value = 900;
+};
+</script>
 
 <style scoped>
 .header {
@@ -48,10 +55,14 @@
   cursor: pointer;
 }
 
-@media (max-width: 847px) {
-.header {
-  justify-content: center;
+a {
+  font-style: none;
 }
+
+@media (max-width: 847px) {
+  .header {
+    justify-content: center;
+  }
 
   .header-content-nav {
     display: none;

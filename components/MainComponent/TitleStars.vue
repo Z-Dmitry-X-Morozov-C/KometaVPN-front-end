@@ -1,24 +1,25 @@
-<script setup lang="ts">
-import Comet from "../Comet.vue";
-</script>
-
 <template>
   <div class="title-conteiner-comet">
-    <Comet class="title-conteiner-comet_comet-1"/>
-    <Comet class="title-conteiner-comet_comet-2"/>
-    <Comet class="title-conteiner-comet_comet-3"/>
+    <Comet class="title-conteiner-comet_comet-1" />
+    <Comet class="title-conteiner-comet_comet-2" />
+    <Comet class="title-conteiner-comet_comet-3" />
   </div>
 </template>
 
+
+<script setup>
+import Comet from "../Comet.vue";
+</script>
+
 <style scoped>
- .title-conteiner-comet {
+.title-conteiner-comet {
   display: flex;
   position: relative;
   gap: 100px;
   width: 50%;
   max-width: 100px;
   height: 600px;
-} 
+}
 
 .title-conteiner-comet_comet-1 {
   position: relative;
@@ -26,9 +27,8 @@ import Comet from "../Comet.vue";
   left: -10%;
   top: -12%;
   animation: stars-flow 1.5s ease-out forwards;
-} 
+}
 .title-conteiner-comet_comet-2 {
-  transform: rotate(45deg);
   position: relative;
   left: 20%;
   scale: 1.2;
@@ -41,7 +41,7 @@ import Comet from "../Comet.vue";
   top: 10%;
   scale: 0.9;
   animation: stars-flow 2.5s ease-out forwards;
-}  
+}
 
 @media (max-width: 847px) {
   .title-conteiner-comet_comet-1 {

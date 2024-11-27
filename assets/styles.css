@@ -7,15 +7,40 @@
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-html {
-  overflow-x: hidden;
+:root {
+  --sb-track-color: #050505;
+  --sb-thumb-color: #d400ff;
+  --sb-size: 5px;
 }
 
+
 body {
-  height: 100vh;
-  width: 100vw;
-  background: #050505;
+  height: 100dvh;
+  max-width: 100dvw;
+  background: var(--sb-track-color);
+
 }
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
 
 .title {
   font-size: calc(50px + (40 + 40 * 0.7) * ((100vw - 320px) / 1920));
@@ -42,4 +67,15 @@ body {
   justify-items: center;
   align-items: center;
   margin: auto;
+}
+
+@keyframes flow-light {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }

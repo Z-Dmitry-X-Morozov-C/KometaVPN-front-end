@@ -1,7 +1,7 @@
 <template>
   <div class="info">
     <AboutComponentProjectPoint />
-    <AboutComponentWeBelieve />
+    <AboutComponentATHENA />
     <AboutComponentVLESS />
     <AboutComponentTerm />
     <AboutComponentWorldMap />
@@ -9,12 +9,10 @@
   </div>
 </template>
 
-<script setup></script>
-
 <style scoped>
 .info {
-  flex-direction: column;
   width: 100%;
   margin-top: 400px;
+  overflow: hidden;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="info_VLESS justify-center">
+  <section class="info_VLESS justify-center">
     <div>
       <p class="title">VLESS</p>
     </div>
@@ -9,17 +9,26 @@
     <div class="info_VLESS_earth">
       <img src="/assets/img/Earth.svg" alt="Earth" class="earth" />
     </div>
-  </div>
+    <div class="gradient-anim"></div>
+  </section>
 </template>
 
 <script></script>
 
 <style scoped>
 .info_VLESS {
-  margin-top: 400px;
   gap: 23px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(246, 93, 93, 0.5));
+  position: relative;
   width: 100%;
+}
+
+.gradient-anim {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #d400ffb0);
+  animation: flow-light 10s cubic-bezier(0.8, 0.2, 1, 1) infinite reverse;
 }
 
 .info_VLESS_earth {
@@ -31,5 +40,20 @@
 .earth {
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 422px) {
+  .justify-center {
+    align-items: start;
+  }
+
+  .title {
+    text-align: start;
+    padding: 5px;
+  }
+  .text {
+    text-align: start;
+    padding: 5px;
+  }
 }
 </style>

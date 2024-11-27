@@ -1,5 +1,5 @@
 <template>
-  <div class="info_term justify-center">
+  <section class="info_term justify-center">
     <div class="align-start">
       <p class="title">До 3-х</p>
       <p class="text m-top">Устройств</p>
@@ -12,14 +12,15 @@
       <p class="title">90 ₽</p>
       <p class="text m-top">В месяц</p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup></script>
 
 <style scoped>
 .info_term {
-    margin-top: 400px;
+  margin: 12px;
+  margin-top: 400px;
   gap: 5vw;
 }
 
@@ -28,10 +29,9 @@
 }
 
 @media (max-width: 422px) {
-.justify-center {
-  align-items: start;
-
-}
+  .justify-center {
+    align-items: start;
+  }
 
   .title {
     text-align: start;

@@ -1,5 +1,5 @@
 <template>
-  <div class="info_world-map justify-center">
+  <section class="info_world-map justify-center">
     <div>
       <p class="title">Мы везде</p>
     </div>
@@ -18,18 +18,14 @@
     <div class="wrapper_countries_Hong-Kong">
       <p class="text">Гонконг</p>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
 .info_world-map {
-  margin: 250px;
+  margin-top: 250px;
   position: relative;
-}
-
-.map_conteiner {
-  width: 100%;
-}
+} 
 
 .map {
   max-width: 100%;

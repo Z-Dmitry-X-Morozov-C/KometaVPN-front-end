@@ -1,5 +1,4 @@
 <template>
-  <MainComponentGridBackgr />
   <MainComponentContent />
 </template>
 

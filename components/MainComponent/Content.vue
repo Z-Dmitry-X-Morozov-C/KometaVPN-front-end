@@ -1,11 +1,13 @@
 <template>
   <div class="main-wrapper">
-    <p class="main-wrapper_title title">
-      Быстрый <br />
-      Приватный <br />
-      Свободный
-    </p>
-    <ButtonComponent :text="ButtonText" />
+    <div class="main-wrapper_title title">
+      <p>Защищенный</p>
+      <p>Быстрый</p>
+      <p>Свободный</p>
+    </div>
+    <div class="main-wrapper__btn">
+      <ButtonComponent :text="ButtonText" :link="LinkBot" />
+    </div>
     <div class="main-wrapper_comet">
       <TitleStars />
     </div>
@@ -14,9 +16,10 @@
 
 <script setup>
 import TitleStars from "./TitleStars.vue";
-import ButtonComponent from "../UI/ButtonComponent.vue";
+import ButtonComponent from "../UI/ButtonWhite.vue";
 
 const ButtonText = "Попробовать сейчас";
+const LinkBot = "http://t.me/KometaVPNBot";
 </script>
 
 <style scoped>
@@ -32,40 +35,32 @@ const ButtonText = "Попробовать сейчас";
 }
 .main-wrapper {
   position: relative;
-  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
   z-index: 1;
 }
 
+.main-wrapper_title ::first-letter {
+  color: #d400ff;
+}
+
 .main-wrapper_title {
-  display: inline-block;
-  font-size: calc(34px + 99 * (100vw / 1920));
-  font-weight: 900;
-  line-height: 85%;
-  cursor: default;
+  font-size: calc(46px + (87 + 87 * 0.7) * ((100vw - 320px) / 1920));
+  letter-spacing: 0;
   text-align: start;
+}
+
+.main-wrapper__btn {
+  margin-top: 4.6vw;
 }
 
 .main-wrapper_comet {
   position: absolute;
-  right: 30%;
-  transform: translateX(-50%);
+  right: 25%;
   top: 25px;
+  transform: translateX(-50%);
   z-index: -101;
-}
-
-.main-wrapper_btn {
-  position: relative;
-  display: flex;
-  margin-top: 4.6vw;
-  color: black;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border-radius: 12px;
-  border: none;
-  background: rgb(255, 255, 255);
-  cursor: pointer;
 }
 
 .main-wrapper_btn-text {
@@ -74,7 +69,7 @@ const ButtonText = "Попробовать сейчас";
 
 @media (max-width: 1476px) {
   .main-wrapper_comet {
-    right: 40%;
+    right: 43%;
   }
 }
 
@@ -93,21 +88,21 @@ const ButtonText = "Попробовать сейчас";
     right: 60%;
   }
 
-  .main-wrapper_btn {
-    padding: 16px;
-  }
-
-  .main-wrapper_btn-text {
-    font-size: calc(18px + (6 + 6 * 0.7) * ((100vw - 375px) / 847px));
+  .main-wrapper__btn {
+    margin-top: 6.6vw;
   }
 }
 
 @media (max-width: 422px) {
+  .main-wrapper_title {
+    font-size: 38px;
+  }
+
   .main-wrapper_comet {
     right: 70%;
   }
-  .main-wrapper_btn {
-    margin-top: 48px;
+  .main-wrapper__btn {
+    margin-top: 10vw;
   }
 }
 </style>
