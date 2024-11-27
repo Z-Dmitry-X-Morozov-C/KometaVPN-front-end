@@ -1,5 +1,5 @@
 <template>
-  <section :ref="isVisible">
+  <section>
     <div class="info_project_point justify-center">
       <div class="info_project_point_title">
         <p class="title" id="Point">Цель проекта</p>
@@ -25,19 +25,19 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { useIntersectionObserver } from "@vueuse/core";
+// import { ref } from "vue";
+// import { useIntersectionObserver } from "@vueuse/core";
 
-const isVisible = ref(false);
-const el = ref(null);
+// const isVisible = ref(false);
+// const el = ref(null);
 
-const { stop } = useIntersectionObserver(el, ([{ isIntersecting }]) => {
-  if (isIntersecting && !isVisible.value) {
-    isVisible.value = true;
-    console.log(isVisible.value, "компонент в области видимости");
-    stop();
-  }
-});
+// const { stop } = useIntersectionObserver(el, ([{ isIntersecting }]) => {
+//   if (isIntersecting && !isVisible.value) {
+//     isVisible.value = true;
+//     console.log(isVisible.value, "компонент в области видимости");
+//     stop();
+//   }
+// });
 </script>
 
 <style scoped>

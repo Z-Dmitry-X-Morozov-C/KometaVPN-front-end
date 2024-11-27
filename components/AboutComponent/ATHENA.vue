@@ -11,7 +11,6 @@
         </p>
       </div>
     </div>
-
     <div class="info_athena_animation">
       <div class="info_athena_background"></div>
       <div class="justify-center">
