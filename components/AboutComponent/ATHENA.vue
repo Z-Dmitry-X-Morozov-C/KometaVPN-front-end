@@ -18,12 +18,24 @@
       </div>
       <div class="info_athena_beam"></div>
       <div class="info_athena_debris">
-        <div class="info_athena_piece piece-1 piece-form-1"></div>
-        <div class="info_athena_piece piece-2 piece-form-2"></div>
-        <div class="info_athena_piece piece-3 piece-form-1"></div>
-        <div class="info_athena_piece piece-4 piece-form-1"></div>
-        <div class="info_athena_piece piece-5 piece-form-2"></div>
-        <div class="info_athena_piece piece-6 piece-form-1"></div>
+        <div class="info_athena_piece piece-1">
+          <img src="/assets/img//pieces/piece-2.png" alt="piece" />
+        </div>
+        <div class="info_athena_piece piece-2">
+          <img src="/assets/img//pieces/piece-1.png" alt="piece" />
+        </div>
+        <div class="info_athena_piece piece-3">
+          <img src="/assets/img//pieces/piece-2.png" alt="piece" />
+        </div>
+        <div class="info_athena_piece piece-4">
+          <img src="/assets/img//pieces/piece-2.png" alt="piece" />
+        </div>
+        <div class="info_athena_piece piece-5">
+          <img src="/assets/img//pieces/piece-1.png" alt="piece" />
+        </div>
+        <div class="info_athena_piece piece-6">
+          <img src="/assets/img//pieces/piece-3.png" alt="piece" />
+        </div>
       </div>
     </div>
   </section>
@@ -59,7 +71,7 @@
 .info_athena-wave {
   position: absolute;
   bottom: 0;
-  width: 2000px;
+  min-width: 1925px;
   height: auto;
 }
 
@@ -70,7 +82,7 @@
   left: 50%;
   top: -20px;
   transform: translateX(-50%);
-  background: linear-gradient(0deg, rgb(255, 0, 215) 60%, #050505 99%);
+  background: linear-gradient(0deg, rgb(255, 0, 215) 60%, #050505 96%);
   filter: blur(5px);
   z-index: -1;
 }
@@ -78,9 +90,11 @@
 .info_athena_background {
   position: absolute;
   top: -10px;
+  left: 50%;
+  transform: translate(-50%);
   height: 100%;
-  width: 100%;
-  background: linear-gradient(0, rgba(255, 0, 215, 0.3) 70%, #050505 99%);
+  width: 2000px;
+  background: radial-gradient(rgba(255, 0, 215, 0.5) 0%, #050505 70%);
   z-index: -10;
 }
 
@@ -91,42 +105,30 @@
 
 .info_athena_piece {
   position: absolute;
-  background-color: black;
-}
-
-.piece-form-1 {
-  clip-path: polygon(51% 5%, 69% 52%, 43% 100%, 12% 75%, 18% 34%);
-  height: 50px;
-  width: 50px;
-}
-.piece-form-2 {
-  clip-path: polygon(37% 7%, 63% 54%, 43% 98%, 5% 64%, 9% 33%);
-  height: 100px;
-  width: 100px;
 }
 
 .piece-1 {
   right: 43px;
   top: 63px;
-  animation: piece-flow-2 2s ease-in infinite;
+  animation: piece-flow-2 3s ease-in-out infinite;
 }
 
 .piece-2 {
   right: 120px;
   top: 97px;
-  animation: piece-flow-1 4s ease-in-out infinite;
+  animation: piece-flow-1 4s ease-in-out infinite ; 
 }
 
 .piece-3 {
   right: 50px;
   top: 230px;
-  animation: piece-flow-1 2s ease-out infinite;
+  animation: piece-flow-1 2.5s ease-in-out infinite ;
 }
 
 .piece-4 {
   left: 43px;
   top: 38px;
-  animation: piece-flow-2 2s ease-in infinite;
+  animation: piece-flow-2 2s ease-in-out infinite;
 }
 
 .piece-5 {
@@ -137,8 +139,8 @@
 
 .piece-6 {
   left: 60px;
-  top: 200px;
-  animation: piece-flow-2 2s ease-in infinite;
+  top: 240px;
+  animation: piece-flow-2 2s ease-in-out infinite reverse;
 }
 
 @keyframes piece-flow-1 {

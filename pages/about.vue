@@ -1,9 +1,9 @@
 <template>
-  <Header />
   <main>
-    <MainComponent />
-    <AboutComponent/>
+    <UserAgree />
   </main>
 </template>
+
+<script setup></script>
 
 <style scoped></style>

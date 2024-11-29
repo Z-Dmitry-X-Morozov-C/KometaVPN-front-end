@@ -13,12 +13,12 @@
   --sb-size: 5px;
 }
 
+a{ 
+  text-decoration: none;
+}
 
 body {
-  height: 100dvh;
-  max-width: 100dvw;
   background: var(--sb-track-color);
-
 }
 
 body::-webkit-scrollbar {
@@ -69,13 +69,4 @@ body::-webkit-scrollbar-thumb {
   margin: auto;
 }
 
-@keyframes flow-light {
-  0%,
-  100% {
-    opacity: 0;
-  }
 
-  50% {
-    opacity: 1;
-  }
-}

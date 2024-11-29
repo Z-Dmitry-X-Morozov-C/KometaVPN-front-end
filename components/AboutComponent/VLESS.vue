@@ -42,6 +42,17 @@
   height: auto;
 }
 
+@keyframes flow-light {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 422px) {
   .justify-center {
     align-items: start;

@@ -5,12 +5,15 @@
     </div>
     <div class="info_try-now__btn justify-center">
       <ButtonWhite :text="TextBot" :link="LinkBot" />
-      <ButtonBlack class="button_tranperent" :text="TextExtention" :link="LinkBot" />
+
+      <ButtonBlack class="button_tranperent" :text="TextExtention" />
     </div>
     <div>
       <p class="text">
         Пользуясь нашим сервисом вы соглашаетесь на <br />
-        <span class="confidentiality"> политику конфиденциальности и условия пользования </span>
+        <NuxtLink to="about">
+          <span class="confidentiality"> политику конфиденциальности и условия пользования </span>
+        </NuxtLink>
       </p>
     </div>
   </section>
@@ -19,8 +22,6 @@
 <script setup>
 import ButtonBlack from "../UI/ButtonBlack.vue";
 import ButtonWhite from "../UI/ButtonWhite.vue";
-import ButtonComponent from "../UI/ButtonWhite.vue";
-import { ref } from "vue";
 
 const TextBot = "Ссылка на телеграм бот";
 const TextExtention = "Расширение для браузера";
