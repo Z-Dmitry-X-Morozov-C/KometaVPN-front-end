@@ -1,7 +1,7 @@
 <template>
   <section class="info_world-map justify-center">
     <div>
-      <p class="title">Мы везде</p>
+      <p class="title">Наши сервера</p>
     </div>
     <div class="map_conteiner justify-center">
       <img src="../../assets/img/WorldMap.svg" alt="map" class="map" />

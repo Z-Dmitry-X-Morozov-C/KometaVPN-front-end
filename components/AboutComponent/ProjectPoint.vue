@@ -24,22 +24,6 @@
   </section>
 </template>
 
-<script setup>
-// import { ref } from "vue";
-// import { useIntersectionObserver } from "@vueuse/core";
-
-// const isVisible = ref(false);
-// const el = ref(null);
-
-// const { stop } = useIntersectionObserver(el, ([{ isIntersecting }]) => {
-//   if (isIntersecting && !isVisible.value) {
-//     isVisible.value = true;
-//     console.log(isVisible.value, "компонент в области видимости");
-//     stop();
-//   }
-// });
-</script>
-
 <style scoped>
 .info_project_point_desc {
   margin-top: 5vw;
@@ -80,33 +64,14 @@
   top: 30px;
 }
 
-/* анимация в облости видимости на экране */
-/* .fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease-out;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.fade-in {
-  opacity: 1;
-} */
-
 @media (max-width: 847px) {
   .info_project_point {
-    justify-items: start;
     margin: auto;
     width: 100%;
-    margin-left: 10px;
+    padding: 5px;
   }
 
   .info_project_point_title {
-    text-align: start;
-  }
-
-  .info_project_point_desc {
     text-align: start;
   }
 

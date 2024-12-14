@@ -3,10 +3,9 @@
     <div>
       <p class="title">Опробуй уже сейчас</p>
     </div>
-    <div class="info_try-now__btn justify-center">
-      <ButtonWhite :text="TextBot" :link="LinkBot" />
-
-      <ButtonBlack class="button_tranperent" :text="TextExtention" />
+    <div class="info_try-now__btn-wrapper justify-center">
+      <ButtonWhite class="button-1" :text="TextBot" :link="LinkBot" />
+      <ButtonBlack class="button-2" :text="TextExtention" />
     </div>
     <div>
       <p class="text">
@@ -34,10 +33,14 @@ const LinkBot = "http://t.me/KometaVPNBot";
   margin-bottom: 202px;
 }
 
-.info_try-now__btn {
+.info_try-now__btn-wrapper {
   margin-top: 5vw;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
+}
+
+.button-1 {
+  width: 100%;
 }
 
 .text {
@@ -47,5 +50,8 @@ const LinkBot = "http://t.me/KometaVPNBot";
 .confidentiality {
   color: var(--sb-thumb-color);
   cursor: pointer;
+}
+
+@media (max-width: 574px) {
 }
 </style>

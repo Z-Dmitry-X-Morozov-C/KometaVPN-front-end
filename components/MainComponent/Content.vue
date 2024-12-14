@@ -60,7 +60,7 @@ const LinkBot = "http://t.me/KometaVPNBot";
   right: 25%;
   top: 25px;
   transform: translateX(-50%);
-  z-index: -101;
+  z-index: -100;
 }
 
 .main-wrapper_btn-text {
@@ -69,7 +69,7 @@ const LinkBot = "http://t.me/KometaVPNBot";
 
 @media (max-width: 1476px) {
   .main-wrapper_comet {
-    right: 43%;
+    right: 45%;
   }
 }
 

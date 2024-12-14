@@ -101,6 +101,7 @@
 .info_athena_debris {
   position: relative;
   justify-self: center;
+  pointer-events: none;
 }
 
 .info_athena_piece {
@@ -116,13 +117,13 @@
 .piece-2 {
   right: 120px;
   top: 97px;
-  animation: piece-flow-1 4s ease-in-out infinite ; 
+  animation: piece-flow-1 4s ease-in-out infinite;
 }
 
 .piece-3 {
   right: 50px;
   top: 230px;
-  animation: piece-flow-1 2.5s ease-in-out infinite ;
+  animation: piece-flow-1 2.5s ease-in-out infinite;
 }
 
 .piece-4 {
@@ -159,6 +160,15 @@
   }
   50% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 872px) {
+  .piece-2 {
+    display: none;
+  }
+  .piece-5 {
+    display: none;
   }
 }
 </style>
