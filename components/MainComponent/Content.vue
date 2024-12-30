@@ -42,7 +42,7 @@ const LinkBot = "http://t.me/KometaVPNBot";
 }
 
 .main-wrapper_title ::first-letter {
-  color: #d400ff;
+  color: #38FA59;
 }
 
 .main-wrapper_title {

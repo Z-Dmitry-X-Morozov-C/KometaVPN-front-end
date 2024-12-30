@@ -20,7 +20,7 @@
   background: linear-gradient(
     360deg,
     rgb(5, 5, 5) 10%,
-    #D400FF, 50%,
+    #38FA59, 50%,
     rgb(249, 249, 255) 90%
   );
 }

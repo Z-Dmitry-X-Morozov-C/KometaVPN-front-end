@@ -29,6 +29,7 @@ button {
   justify-content: center;
   align-items: center;
   padding: 1em;
+  max-width: inherit;
   border-radius: 42px;
   border: none;
   border: 1px solid white;

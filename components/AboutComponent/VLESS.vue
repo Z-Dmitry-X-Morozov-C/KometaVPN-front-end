@@ -27,7 +27,7 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #d400ffb0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #38fa58b6);
   animation: flow-light 10s cubic-bezier(0.8, 0.2, 1, 1) infinite reverse;
 }
 

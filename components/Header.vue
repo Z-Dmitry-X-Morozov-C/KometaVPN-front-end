@@ -7,7 +7,9 @@
     </div>
     <div class="header-content-nav">
       <div @click.prevent="smoothScroll('#Point')" class="cursor header-content-nav_proj-point">Цель проекта</div>
-      <div class="cursor header-content-nav_contact-us">Связаться с нами</div>
+      <NuxtLink to="about">
+        <div class="cursor header-content-nav_contact-us">Политика конфиденциальности</div>
+      </NuxtLink>
     </div>
   </header>
 </template>

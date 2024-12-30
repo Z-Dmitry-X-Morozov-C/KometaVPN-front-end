@@ -230,7 +230,7 @@ p {
   position: absolute;
   min-width: 100%;
   height: 400px;
-  background: radial-gradient(#d400ff8e 0%, #050505 70%);
+  background: radial-gradient(#38fa5848 0%, #050505 70%);
   z-index: -1;
   animation: opacity 6s ease-in-out infinite;
 }

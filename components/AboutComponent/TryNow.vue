@@ -5,7 +5,9 @@
     </div>
     <div class="info_try-now__btn-wrapper justify-center">
       <ButtonWhite class="button-1" :text="TextBot" :link="LinkBot" />
-      <ButtonBlack class="button-2" :text="TextExtention" />
+      <a class="button-2" href="https://kometavpn.ru/KometaInstaller.exe">
+        <ButtonBlack class="button-2" :text="TextExtention" />
+      </a>
     </div>
     <div>
       <p class="text">
@@ -23,7 +25,7 @@ import ButtonBlack from "../UI/ButtonBlack.vue";
 import ButtonWhite from "../UI/ButtonWhite.vue";
 
 const TextBot = "Ссылка на телеграм бот";
-const TextExtention = "Расширение для браузера";
+const TextExtention = "Скачать приложение";
 const LinkBot = "http://t.me/KometaVPNBot";
 </script>
 
@@ -40,6 +42,10 @@ const LinkBot = "http://t.me/KometaVPNBot";
 }
 
 .button-1 {
+  width: 100%;
+}
+
+.button-2 {
   width: 100%;
 }
 

@@ -82,7 +82,7 @@
   left: 50%;
   top: -20px;
   transform: translateX(-50%);
-  background: linear-gradient(0deg, rgb(255, 0, 215) 60%, #050505 96%);
+  background: linear-gradient(0deg, rgb(0, 255, 42) 60%, #050505 96%);
   filter: blur(5px);
   z-index: -1;
 }
@@ -94,7 +94,7 @@
   transform: translate(-50%);
   height: 100%;
   width: 2000px;
-  background: radial-gradient(rgba(255, 0, 215, 0.5) 0%, #050505 70%);
+  background: radial-gradient(rgba(56, 250, 88, 0.192) 0%, #050505 70%);
   z-index: -10;
 }
 
